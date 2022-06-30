@@ -1,38 +1,115 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+a{
+  color: white;
+  font-size: 18px;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #ddd;
+}
+
+.main_Container{
+margin: 0;
+padding: 0;
+}
+
+
+.bg_img{
+  background-image: url('assets/bg4.jpg');
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.myform{
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  padding: 15px;
+  border-radius: 8px;
+
+ 
+}
+
+.header{
+  background-color: #333;
+  opacity: 0.3;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.header h1{
+  padding-top: 20px;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.welcome{
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 40px;
+  background-color: #333;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sub{
+  width: 200px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 8px;
+  background-color: #ddd;
+  
+}
+
+.sup{
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 8px;
+  color: white;
+  background-color: #303952;
+}
+
+.ans_wrong{
+  color: red;
+}
+
+.question{
+  margin-top: 30px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.answers{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ansMybtn{
+  width: 250px;
+}
+
+.timer{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: #f1f1f1;
+  font-size: 16px;
+  font-weight: 500;
 }
